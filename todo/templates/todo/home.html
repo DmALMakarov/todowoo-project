@@ -1,0 +1,19 @@
+{% extends "todo/base.html" %}
+
+{% block content %}
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="row justify-content-center mt-5">
+        <div class="col-md-7 text-center">
+
+                 <h1>Привет! Это ToDo Woo.</h1>
+            <p>Короче, для начала прочти этот <u>текст</u> перед тем как начать. Я создал этот сервис <b><i>Todo Woo</i></b> через который мы сможем общаться. Всё общение будет происходить через заметки. Если у тебя есть логин и пароль от общего аккаунта заходи по нему, перейдя по ссылке вверху "Войти". Также ты можешь создавать свои личные заметки, для этого зарегистрируй новый аккаунт по ссылке ниже.</p>
+        <a role="button" class="btn btn-primary btn-lg" href="{% url 'signupuser' %}">Start</a>
+        </div>
+    </div>
+
+{% endblock %}
